@@ -1,4 +1,5 @@
 import os
+import time
 
 def PDinamica(v, p, m, L):
     G = [[0 for _ in range(L + 1)] for _ in range(m + 1)]
@@ -26,47 +27,113 @@ def PDinamica(v, p, m, L):
 
     return G[m][L], items_selected
 
+def PGulosoMenorPeso(v, p, m, L):
+    itens_selecionados = []
+    peso_total = 0
+    valor_total = 0
+    
+    itens_ordenados = sorted(range(m), key=lambda i: p[i])
+
+    for i in itens_ordenados:
+        if peso_total + p[i] <= L:
+            itens_selecionados.append(i + 1)
+            peso_total += p[i]
+            valor_total += v[i]
+
+    return valor_total, itens_selecionados
+
+def PGulosoCustoBeneficio(v, p, m, L):
+    itens_selecionados = []
+    peso_total = 0
+    valor_total = 0
+    
+    custo_beneficio = [(v[i] / p[i], i) for i in range(m)]
+    custo_beneficio.sort(reverse=True)
+
+    for _, i in custo_beneficio:
+        if peso_total + p[i] <= L:
+            itens_selecionados.append(i + 1)
+            peso_total += p[i]
+            valor_total += v[i]
+
+    return valor_total, itens_selecionados
+
 def read_data_from_txt(filename):
     with open(filename, 'r') as file:
         lines = file.readlines()
         items = []
+
+        line = lines.pop(0)
+        m = int(line.split()[0])
+        L = int(line.split()[1])
+        
         for line in lines:
             values = line.split()
-            if len(values) >= 2:  # Verifica se a linha possui pelo menos dois valores
+            if len(values) >= 2:
                 try:
                     value = int(values[0])
                     weight = int(values[1])
-                    if weight != 0:  # Verifica se o peso é diferente de zero para evitar a divisão por zero
+                    if weight != 0:
                         items.append((value, weight))
                 except ValueError:
-                    pass  # Ignora linhas com valores não numéricos
-        items.sort(key=lambda x: x[0] / x[1], reverse=True)  # Ordena os itens pela relação benefício/custo
+                    pass
+        items.sort(key=lambda x: x[0] / x[1], reverse=True)
         v = [item[0] for item in items]
         p = [item[1] for item in items]
-        m = len(v)
-        return v, p, m
+        return v, p, m, L
 
 def main():
-    folders = ["large_scale", "large_scale-optimum", "low-dimensional", "low-dimensional-optimum"]
-    L = 300  
+    folder = "large_scale"
     with open("relatorio.txt", "w") as report_file:
-        for folder in folders:
-            folder_path = os.path.join(os.getcwd(), folder)
-            files = os.listdir(folder_path)
-            report_file.write(f"Executando para a pasta {folder}:\n")
-            for file in files:
-                file_path = os.path.join(folder_path, file)
-                v, p, m = read_data_from_txt(file_path)
-                max_valor, itens_selecionados = PDinamica(v, p, m, L)
-                report_file.write(f"Para o arquivo {file}:\n")
-                report_file.write("Valor máximo que pode ser carregado na mochila: {}\n".format(max_valor))
-                report_file.write("Itens selecionados, peso: ")
-                for item in itens_selecionados:
-                    report_file.write("[{} = {}], ".format(item, p[item-1]))
-                report_file.write("\n")
-                report_file.write("Capacidade da mochila: {}\n".format(L))
-                report_file.write("Quantidade de itens na mochila: {}\n".format(m))
-                report_file.write("\n")
+        folder_path = os.path.join(os.getcwd(), folder)
+        files = os.listdir(folder_path)
+        report_file.write(f"\nExecutando para a pasta {folder}:\n")
+        for file in files:
+            file_path = os.path.join(folder_path, file)
+            v, p, m, L = read_data_from_txt(file_path)
+            
+            tempo_inicial = time.time()
+            max_valor, itens_selecionados = PDinamica(v, p, m, L)
+            tempo_final_dinamica = time.time() - tempo_inicial
+            tempo_inicial = time.time()
+            max_valor_guloso_menor_peso, itens_selecionados_guloso_menor_peso = PGulosoMenorPeso(v, p, m, L)
+            tempo_final_menor_peso = time.time() - tempo_inicial
+            tempo_inicial = time.time()
+            max_valor_guloso_custo_beneficio, itens_selecionados_guloso_custo_beneficio = PGulosoCustoBeneficio(v, p, m, L)
+            tempo_final_guloso_custo_beneficio = time.time() - tempo_inicial
+            report_file.write(f"\nPara o arquivo {file}:\n")
+            report_file.write("    Capacidade da mochila: {}\n".format(L))
+            report_file.write("    Quantidade de itens total na mochila: {}\n".format(m))
+            
+            # PDinamica
+            report_file.write("  Programacao Dinamica:\n")
+            report_file.write("    Valor maximo que pode ser carregado na mochila: {}\n".format(max_valor))
+            report_file.write("    Quantidade de itens na mochila: {}\n".format(len(itens_selecionados)))
+            report_file.write(f"    Tempo de execucao: {tempo_final_dinamica}.")
+            # report_file.write("    \nItens selecionados, peso: ")
+            # for item in itens_selecionados:
+            #     report_file.write("[{} = {}], ".format(item, p[item-1]))
+            report_file.write("\n")
+            
+            # PGulosoMenorPeso
+            report_file.write("  Programacao Gulosa para menor peso:\n")
+            report_file.write("    Valor maximo que pode ser carregado na mochila: {}\n".format(max_valor_guloso_menor_peso))
+            report_file.write("    Quantidade de itens na mochila: {}\n".format(len(itens_selecionados_guloso_menor_peso)))
+            report_file.write(f"    Tempo de execucao: {tempo_final_menor_peso}.")
+            # report_file.write("    \nItens selecionados, peso: ")
+            # for item in itens_selecionados_guloso_menor_peso:
+            #     report_file.write("[{} = {}], ".format(item, p[item-1]))
+            report_file.write("\n")
+            
+            # PGulosoCustoBeneficio
+            report_file.write("  Programacao Gulosa para custo beneficio:\n")
+            report_file.write("    Valor maximo que pode ser carregado na mochila: {}\n".format(max_valor_guloso_custo_beneficio))
+            report_file.write("    Quantidade de itens na mochila: {}\n".format(len(itens_selecionados_guloso_custo_beneficio)))
+            report_file.write(f"    Tempo de execucao: {tempo_final_guloso_custo_beneficio}.")
+            # report_file.write("    \nItens selecionados, peso: ")
+            # for item in itens_selecionados_guloso_custo_beneficio:
+            #     report_file.write("[{} = {}], ".format(item, p[item-1]))
+            report_file.write("\n")
 
 
 if __name__ == "__main__":

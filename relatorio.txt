@@ -1,0 +1,338 @@
+
+Executando para a pasta large_scale:
+
+Para o arquivo knapPI_1_10000_1000_1:
+    Capacidade da mochila: 49877
+    Quantidade de itens total na mochila: 10000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 563647
+    Quantidade de itens na mochila: 840
+    Tempo de execucao: 530.8767461776733.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 496326
+    Quantidade de itens na mochila: 955
+    Tempo de execucao: 0.04188871383666992.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 563605
+    Quantidade de itens na mochila: 841
+    Tempo de execucao: 0.018953561782836914.
+
+Para o arquivo knapPI_1_1000_1000_1:
+    Capacidade da mochila: 5002
+    Quantidade de itens total na mochila: 1000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 54503
+    Quantidade de itens na mochila: 83
+    Tempo de execucao: 8.587044954299927.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 47521
+    Quantidade de itens na mochila: 92
+    Tempo de execucao: 0.000997781753540039.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 54386
+    Quantidade de itens na mochila: 83
+    Tempo de execucao: 0.0009975433349609375.
+
+Para o arquivo knapPI_1_100_1000_1:
+    Capacidade da mochila: 995
+    Quantidade de itens total na mochila: 100
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 9147
+    Quantidade de itens na mochila: 12
+    Tempo de execucao: 0.188493013381958.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 8693
+    Quantidade de itens na mochila: 13
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 8817
+    Quantidade de itens na mochila: 12
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_1_2000_1000_1:
+    Capacidade da mochila: 10011
+    Quantidade de itens total na mochila: 2000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 110625
+    Quantidade de itens na mochila: 160
+    Tempo de execucao: 19.511172771453857.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 97799
+    Quantidade de itens na mochila: 181
+    Tempo de execucao: 0.0010035037994384766.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 110547
+    Quantidade de itens na mochila: 162
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_1_200_1000_1:
+    Capacidade da mochila: 1008
+    Quantidade de itens total na mochila: 200
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 11238
+    Quantidade de itens na mochila: 16
+    Tempo de execucao: 0.0768280029296875.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 10744
+    Quantidade de itens na mochila: 17
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 11227
+    Quantidade de itens na mochila: 16
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_1_5000_1000_1:
+    Capacidade da mochila: 25016
+    Quantidade de itens total na mochila: 5000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 276457
+    Quantidade de itens na mochila: 410
+    Tempo de execucao: 91.3320529460907.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 245518
+    Quantidade de itens na mochila: 467
+    Tempo de execucao: 0.009973764419555664.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 276379
+    Quantidade de itens na mochila: 412
+    Tempo de execucao: 0.005993366241455078.
+
+Para o arquivo knapPI_1_500_1000_1:
+    Capacidade da mochila: 2543
+    Quantidade de itens total na mochila: 500
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 28857
+    Quantidade de itens na mochila: 42
+    Tempo de execucao: 0.6382923126220703.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 25187
+    Quantidade de itens na mochila: 47
+    Tempo de execucao: 0.0009975433349609375.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 28834
+    Quantidade de itens na mochila: 43
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_2_10000_1000_1:
+    Capacidade da mochila: 49877
+    Quantidade de itens total na mochila: 10000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 90204
+    Quantidade de itens na mochila: 603
+    Tempo de execucao: 368.81472516059875.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 59263
+    Quantidade de itens na mochila: 955
+    Tempo de execucao: 0.01738882064819336.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 90200
+    Quantidade de itens na mochila: 612
+    Tempo de execucao: 0.05645251274108887.
+
+Para o arquivo knapPI_2_1000_1000_1:
+    Capacidade da mochila: 5002
+    Quantidade de itens total na mochila: 1000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 9052
+    Quantidade de itens na mochila: 59
+    Tempo de execucao: 3.083695888519287.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 6152
+    Quantidade de itens na mochila: 92
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 9046
+    Quantidade de itens na mochila: 58
+    Tempo de execucao: 0.0009975433349609375.
+
+Para o arquivo knapPI_2_100_1000_1:
+    Capacidade da mochila: 995
+    Quantidade de itens total na mochila: 100
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 1514
+    Quantidade de itens na mochila: 9
+    Tempo de execucao: 0.030618667602539062.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 951
+    Quantidade de itens na mochila: 13
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 1487
+    Quantidade de itens na mochila: 10
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_2_2000_1000_1:
+    Capacidade da mochila: 10011
+    Quantidade de itens total na mochila: 2000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 18051
+    Quantidade de itens na mochila: 115
+    Tempo de execucao: 12.791840076446533.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 11972
+    Quantidade de itens na mochila: 181
+    Tempo de execucao: 0.0009968280792236328.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 18038
+    Quantidade de itens na mochila: 118
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_2_200_1000_1:
+    Capacidade da mochila: 1008
+    Quantidade de itens total na mochila: 200
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 1634
+    Quantidade de itens na mochila: 9
+    Tempo de execucao: 0.06485700607299805.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 1096
+    Quantidade de itens na mochila: 17
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 1604
+    Quantidade de itens na mochila: 12
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_2_5000_1000_1:
+    Capacidade da mochila: 25016
+    Quantidade de itens total na mochila: 5000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 44356
+    Quantidade de itens na mochila: 284
+    Tempo de execucao: 76.73783993721008.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 28084
+    Quantidade de itens na mochila: 467
+    Tempo de execucao: 0.003988504409790039.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 44351
+    Quantidade de itens na mochila: 291
+    Tempo de execucao: 0.001993417739868164.
+
+Para o arquivo knapPI_2_500_1000_1:
+    Capacidade da mochila: 2543
+    Quantidade de itens total na mochila: 500
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 4566
+    Quantidade de itens na mochila: 28
+    Tempo de execucao: 0.5654909610748291.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 3105
+    Quantidade de itens na mochila: 47
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 4552
+    Quantidade de itens na mochila: 30
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_3_10000_1000_1:
+    Capacidade da mochila: 49519
+    Quantidade de itens total na mochila: 10000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 146919
+    Quantidade de itens na mochila: 974
+    Tempo de execucao: 353.5819716453552.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 146888
+    Quantidade de itens na mochila: 974
+    Tempo de execucao: 0.015487194061279297.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 146888
+    Quantidade de itens na mochila: 974
+    Tempo de execucao: 0.012748003005981445.
+
+Para o arquivo knapPI_3_1000_1000_1:
+    Capacidade da mochila: 4990
+    Quantidade de itens total na mochila: 1000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 14390
+    Quantidade de itens na mochila: 94
+    Tempo de execucao: 2.9969868659973145.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 14374
+    Quantidade de itens na mochila: 94
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 14374
+    Quantidade de itens na mochila: 94
+    Tempo de execucao: 0.0009980201721191406.
+
+Para o arquivo knapPI_3_100_1000_1:
+    Capacidade da mochila: 997
+    Quantidade de itens total na mochila: 100
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 2397
+    Quantidade de itens na mochila: 14
+    Tempo de execucao: 0.03793764114379883.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 2375
+    Quantidade de itens na mochila: 14
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 2375
+    Quantidade de itens na mochila: 14
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_3_2000_1000_1:
+    Capacidade da mochila: 9819
+    Quantidade de itens total na mochila: 2000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 28919
+    Quantidade de itens na mochila: 191
+    Tempo de execucao: 12.489644527435303.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 28827
+    Quantidade de itens na mochila: 191
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 28827
+    Quantidade de itens na mochila: 191
+    Tempo de execucao: 0.0009975433349609375.
+
+Para o arquivo knapPI_3_200_1000_1:
+    Capacidade da mochila: 997
+    Quantidade de itens total na mochila: 200
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 2697
+    Quantidade de itens na mochila: 17
+    Tempo de execucao: 0.0688176155090332.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 2649
+    Quantidade de itens na mochila: 17
+    Tempo de execucao: 0.0.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 2649
+    Quantidade de itens na mochila: 17
+    Tempo de execucao: 0.0.
+
+Para o arquivo knapPI_3_5000_1000_1:
+    Capacidade da mochila: 24805
+    Quantidade de itens total na mochila: 5000
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 72505
+    Quantidade de itens na mochila: 477
+    Tempo de execucao: 73.11259055137634.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 72446
+    Quantidade de itens na mochila: 477
+    Tempo de execucao: 0.0009999275207519531.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 72446
+    Quantidade de itens na mochila: 477
+    Tempo de execucao: 0.001991748809814453.
+
+Para o arquivo knapPI_3_500_1000_1:
+    Capacidade da mochila: 2517
+    Quantidade de itens total na mochila: 500
+  Programacao Dinamica:
+    Valor maximo que pode ser carregado na mochila: 7117
+    Quantidade de itens na mochila: 46
+    Tempo de execucao: 0.6183476448059082.
+  Programacao Gulosa para menor peso:
+    Valor maximo que pode ser carregado na mochila: 7098
+    Quantidade de itens na mochila: 46
+    Tempo de execucao: 0.0009968280792236328.
+  Programacao Gulosa para custo beneficio:
+    Valor maximo que pode ser carregado na mochila: 7098
+    Quantidade de itens na mochila: 46
+    Tempo de execucao: 0.0.
